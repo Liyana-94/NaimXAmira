@@ -2,56 +2,95 @@
 <html lang="ms">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jemputan Majlis Perkahwinan</title>
+  
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff8f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fffaf0;
       color: #333;
-      margin: 30px;
-      line-height: 1.6;
-    }
-    .container {
+      padding: 20px;
       max-width: 600px;
       margin: auto;
-      padding: 20px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      line-height: 1.6;
     }
-    h1 {
+    h1, h2, h3 {
       text-align: center;
-      color: #a0522d;
+      color: #8B0000;
     }
-    .link {
+    .center {
       text-align: center;
-      margin-top: 20px;
     }
     a {
-      background-color: #a0522d;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
       display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #8B0000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
     }
     a:hover {
-      background-color: #8b4513;
+      background-color: #a52a2a;
     }
-    .arabic {
-      font-family: 'Traditional Arabic', serif;
-      font-size: 18px;
+    video {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    #countdown {
+      font-size: 1.5em;
+      color: #a52a2a;
       text-align: center;
-      margin-bottom: 10px;
+      margin: 20px 0;
+    }
+    form {
+      margin-top: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #8B0000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #a52a2a;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>JEMPUTAN MAJLIS PERKAHWINAN</h1>
-    <div class="arabic">ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</div>
-    <p>Salam Sejahtera</p>
+   <div class="center">
+    <button onclick="document.getElementById('bg-music').play()">Mainkan Muzik Latar</button>
+  </div>
+  <audio id="bg-music">
+    <source src="background_music.mp3" type="audio/mpeg">
+    Pelayar anda tidak menyokong elemen audio.
+  </audio>
+  
+   <h1>JEMPUTAN MAJLIS PERKAHWINAN</h1>
+  <p class="center">‎ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</p>
+  <p class="center"><strong>Salam Sejahtera</strong></p>
+
     <p>Dengan penuh rasa kesyukuran, kami</p>
     <p><strong>NU’AIM MUSDI BIN MOHD DIN & RAMLAH BINTI RAMLE</strong></p>
     <p>Seisi keluarga dengan segala hormatnya menjemput anda ke</p>
